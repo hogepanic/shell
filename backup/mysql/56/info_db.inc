@@ -12,4 +12,4 @@ DB_HOST="localhost"
 #* MySQL binaries *#
 DB_TYPE="$(which mysql)"
 DB_SQLDUMP="$(which mysqldump)"
-DB_PARAM="--quick --single-transaction --default-character-set=utf8"
+DB_PARAM=" --single-transaction --master-data=2 --triggers --routines --events"
